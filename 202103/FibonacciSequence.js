@@ -31,7 +31,7 @@ function recurse(n) {
     return recurse(n - 1) + recurse(n - 2);
 }
 
-// ![](./images/fib.png)
+// ![](../images/fibsequence.png)
 // 加缓存优化
 /* 不加缓存，12级递归需要计算144次
  * 加上缓存，12级递归需要计算10次
