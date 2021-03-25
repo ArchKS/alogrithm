@@ -3,14 +3,11 @@
     第二个月之后（第三个月初）它们可以生育
     每月每对可生育的兔子会诞生下一对新兔子
     兔子永不死去
-*/
 
-/* 
-    F(n) = 0, n=0;
-         = 1, n=1;
-         = F(n-1) + F(n-2), n>1;
+F(n) = 0, n=0;
+     = 1, n=1;
+     = F(n-1) + F(n-2), n>1;
 */
-
 // 两种解法：常规迭代和递归
 // n标识第n个月份
 
@@ -43,20 +40,16 @@ function recurse(n) {
  */
 function recurseCache(n) {
     let cache = [0, 1, 1];
-    let i = 0;
     function _fbi(n) {
         if (cache[n]) return cache[n];
         cache[n] = _fbi(n - 1) + _fbi(n - 2);
-        i++;
         return cache[n]
     }
-    let res = _fbi(n);
-    console.log(i);
-    return res;
+    return _fbi(n);
 }
 
-recurse(12)
-recurseCache(12)
+
+console.log(recurseCache(12));
 
 
 
