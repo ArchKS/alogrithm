@@ -15,9 +15,9 @@
 
 ### 查找
 
-[折半查找](./202103/halfSearch.js)
+[折半查找](./202103/searchHalf.js)
 
 
-[斐波那契查找](./202103/FibonacciSearch.js)
+[斐波那契查找](./202103/searchFibonacci.js)
 
-
+[二叉排序树](./202103/searchBST.js)
