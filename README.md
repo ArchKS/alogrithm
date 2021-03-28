@@ -6,7 +6,10 @@
 
 [阶乘](./202103/Factorial.js)
 
-<br>
+[爬楼梯问题](./202103/climbStairs.js)
+
+[两数之和](./202103/twoSum.js)
+
 <br>
 <br>
 
@@ -21,3 +24,10 @@
 [斐波那契查找](./202103/searchFibonacci.js)
 
 [二叉排序树](./202103/searchBST.js)
+
+
+### 排序
+
+[选择排序](./202103/selectSort.js)
+
+[直接插入排序](./202103/insertSort.js)
