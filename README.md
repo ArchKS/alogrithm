@@ -14,6 +14,12 @@
 
 [字符串匹配KMP](./202103/kmp.js)
 
+[金额格式化](./202103/fmtMoney.js)
+
+[汉诺塔](./202103/TowerofHanoi.js)
+
+[背包问题](./202103/knapstack.js)
+
 <br>
 <br>
 
