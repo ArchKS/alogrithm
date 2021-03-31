@@ -15,7 +15,7 @@ function fmtMoneny2(money) {
 
 // 方法三：正则
 function fmtMoneny3(money) {
-    return String(money).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return String(money).replace(/(?=(\d{3})+(?!\d))/g, ',');
 
 }
 

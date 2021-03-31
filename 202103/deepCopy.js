@@ -1,12 +1,16 @@
 // 深拷贝，因为JSON.parse(JSON.stringfy())不能解析正则
-function deepCopy(target) {
-    if (typeof target !== 'object') return target;
-    let obj = Array.isArray(target) ? [] : {};
-    Object.keys(target).forEach(key => {
-        typeof target[key] === 'object' ? obj[key] = deepCopy(target[key]) : obj[key] = target[key];
+function deepCopy(source) {
+    if (typeof source !== 'object') return source;
+    
+    let o = Array.isArray(source) ? [] : {};
+
+    Object.keys(source).forEach(key => {
+        o[key] = deepCopy(target[key])
     })
-    return obj;
+    return o;
 }
+
+// test--------------
 
 let arr = [1, 2, 3, [4, 5]];
 let obj = {
@@ -20,4 +24,4 @@ let arrx = deepCopy(arr);
 console.log(arrx, arrx[3] === arr[3]);
 
 let objx = deepCopy(obj);
-console.log(objx,objx.name === obj.name);
+console.log(objx, objx.name === obj.name);
