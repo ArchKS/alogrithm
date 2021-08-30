@@ -3,7 +3,7 @@
  * @param {number} numRows
  * @return {string}
  * @desc  给定一串字符，将其用Z字形排列
- * 设 numRows 行字符串分别为 s_1s , s_2s ,..., s_ns ，则容易发现：按顺序遍历字符串 s 时，每个字符 c 在 ZZ 字形中对应的 行索引 先从 s_1s 增大至 s_ns，再从 s_ns 减小至 s_1s 如此反复。因此，解决方案为：模拟这个行索引的变化，在遍历 s 中把每个字符填到正确的行 res[i]
+ *        假设有N行，则没有个s的下标是从0～n，然后又从n～0的，所以只要在临界点进行一次反转，
  * @url https://leetcode-cn.com/problems/zigzag-conversion/
  */
 var convert = function (s, numRows) {  

@@ -61,4 +61,5 @@
 [Z 字形变换](./202108/convert.js)
 
 
+[9. 回文数](./202108/isPalindrome.js)
 
